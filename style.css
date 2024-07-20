@@ -1,0 +1,451 @@
+/* General CSS */
+
+.bigcontainer {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    height: 98.7vh;
+}
+
+
+.maincontainer {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 2fr 3fr 1fr;
+    height: 100%;
+    width: 1600px;
+    gap: 7px;    
+}
+
+/* Main Banner */
+.main-banner {
+    background-color: #FFF9D0;
+    height: 100%;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    z-index: 1;
+    border: solid 2px #e6d881;
+    border-radius: 10px;
+
+}
+
+
+.page-top-text {
+    display: flex;
+    grid-column: span 3;
+    justify-content: left;
+    padding-left: 25px;
+}
+
+
+.main-banner-text {
+    grid-row-start: 2;
+    grid-column: span 2;
+    padding-left: 25px;
+}
+
+.check-text {
+    display: flex;
+    grid-column: span 3;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+.main-banner-image {
+    display: flex;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-banner-image > img {
+    max-height: 150px;
+    border-radius: 100%;
+    border: 5px solid black;
+}
+
+
+/* Side Nav Bar */
+.sidebar {
+    background-color: #5AB2FF;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row: span 3;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.sidebar-title {
+    padding-left: 18px;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: #3b85c5;
+}
+
+
+ol {
+    list-style-type: "-  ";
+    padding-left: 20px;
+  }
+
+ol li {
+    padding-bottom: 10px;
+}
+
+ol li:hover {
+    font-size: 15pt;
+    cursor: pointer;
+}
+/* Project Info Area */
+.project-info {
+    background-color: #CAF4FF;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 70px 470px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+
+.project-info-title{
+    display: flex;
+    justify-content: right;
+    grid-column: span 3;
+    padding-right: 25px;
+    height: fit-content;
+}
+
+.infocard {
+    display: flex;
+    justify-content: center;
+}
+
+.infocard-container {
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    grid-template-columns: 300px;
+    object-fit: scale-down;
+    background-color: white;
+    border-radius: 15px;
+    border: solid 2px #e6d881;
+    box-shadow: 0px 5px 15px 0px;
+}
+
+.infocard :hover {
+    cursor: pointer;
+}
+
+
+.infocard-container > .info-card-text {
+    display: flex;
+    background-color: #FFF9D0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.infocard-container > .info-card-image {
+    display: flex;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.info-card-image > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 396px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    object-fit: cover;
+}
+
+
+
+/* Right Side Margin */
+.right-side-margin {
+    background-color: #5AB2FF;
+    background-image: url(./Images/geometric-pattern.png);
+    background-size: contain;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row: span 3;
+    display: flex;
+    z-index: 2;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.right-side-margin-container > h2 {
+    text-align: center;
+    background-color: #5AB2FF;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 0px;
+    border: solid 2px #3b85c5;
+}
+
+/* Footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+	background: linear-gradient(0deg, #5AB2FF, #A0DEFF, #CAF4FF);
+    border-radius: 10px;
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+
+.footer-title {
+    padding-left: 25px;
+}
+
+.links-container {
+    display: inline-flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-container > a {
+    display: flex;
+}
+
+.links-container > a > img {
+    height: 40px;
+}
+
+.links-container > a > img:hover {
+    height: 50px;
+}
+
+.links-container > a > img {
+    height: 40px;
+}
+
+.links-container > a > img:hover {
+    height: 50px;
+}
+
+/* Fonts */
+.glegoo-regular {
+    font-family: "Glegoo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.glegoo-bold {
+    font-family: "Glegoo", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.asap-condensed-regular {
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  
+/* Applied Fonts */
+h1 {
+    font-family: "Glegoo", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: underline;
+    text-decoration-color: #e6d881;
+}
+
+h2 {
+    padding-top: 10px;
+    font-family: "Glegoo", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+}
+
+h3 {
+    font-family: "Glegoo", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin: 0px;
+}
+
+p {
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+}
+
+li {
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+}
+
+
+/* Breakpoint */
+
+@media (max-width: 1024px) {
+ 
+    /* Elements to hide */
+    .sidebar {
+        display: none;
+    }
+
+    .right-side-margin {
+        display: none;
+    }
+
+    /* Elements that are visible */
+
+    .bigcontainer {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .maincontainer {
+        display: grid;
+        grid-template-columns: 5px 380px 5px;
+        grid-template-rows: 1fr 3fr 0.5fr;
+        justify-content: center;
+    }
+
+    /* Main Banner */
+
+    .main-banner {
+        display: grid;
+        width: 400px;
+        grid-template-columns: 5px 400px 5px;
+        grid-template-rows: 130px 1fr 1fr 0.2fr;
+    }
+
+    .page-top-text {
+        display: flex;
+        grid-column-start: 2;
+        justify-content: center;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 8px;
+    }
+
+    .main-banner-image {
+        display: flex;
+        grid-column-start: 2;
+        grid-row-start: 2;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-banner-text {
+        grid-row-start: 3;
+        padding-left: 5px;
+        padding-right: 7px;
+        text-align: center;
+    }
+
+    .check-text {
+        display: flex;
+        padding-right: 10px;
+        padding-bottom: 15px;
+    }
+
+    .check-text h2 {
+        font-family: "Asap Condensed", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 10pt;
+    }
+
+    .footer-title {
+        grid-column-start: 2;
+        text-align: center;
+    }
+    
+    /* Project Info Area */
+
+    .project-info {
+        background-color: #CAF4FF;
+        grid-column-start: 2;
+        grid-row-start: 2;
+        display: grid;
+        grid-template-rows: 80px repeat(3, 1fr);
+        grid-template-columns: 5px 400px 5px;
+        border-radius: 10px;
+        height: 100%px;
+        width: 403px;
+        justify-content: center;
+        gap: 7px;
+    }
+
+    .project-info-title{
+        display: flex;
+        text-align: center;
+        height: fit-content;
+        line-height: 1.2;
+        grid-column-start: 2;
+        width: 403px;
+        padding-top: 5px;
+    }
+
+    .infocard.one {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+
+    .infocard.two {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+
+    .infocard.three {
+        grid-row-start: 4;
+        grid-column-start: 2;
+    }
+
+    /* Footer */
+
+    .footer {
+        display: grid;
+        grid-template-columns: 5px 400px 5px;
+        grid-template-rows: repeat(2, 1fr);
+        background: linear-gradient(0deg, #5AB2FF, #A0DEFF, #CAF4FF);
+        border-radius: 10px;
+        grid-row-start: 3;
+        grid-column-start: 2;
+        width: 403px;
+        height: 150px;
+    }
+
+    .footer-title {
+        padding: 0px;
+    }
+
+    .footer-title  > h2 {
+        padding-top: 20px;
+    }
+
+}
+
